@@ -5,11 +5,10 @@ import "./App.css";
 function App() {
   const [buttonColor, setButtonColor] = useState("red");
   const newButtonColor = buttonColor === "red" ? "blue" : "red";
-
   return (
     <div>
       <button
-        onClick={() => setButtonColor(newButtonColor)}
+        onClick={() => setButtonColor("blue")}
         style={{ backgroundColor: buttonColor }}
       >
         Change to {newButtonColor}
