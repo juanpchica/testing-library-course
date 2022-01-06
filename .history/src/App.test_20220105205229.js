@@ -6,5 +6,5 @@ test("button has correct initial color", () => {
 
   const button = screen.getByRole("button", { name: "Change to blue" });
 
-  expect(button).toHaveStyle({ backgroundColor: "red" });
+  expect(button).toHaveStyle({ bakgroundColor: "red" });
 });
