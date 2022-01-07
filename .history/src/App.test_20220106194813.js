@@ -42,8 +42,4 @@ test("button must be disabled when checkbox checked", () => {
   fireEvent.click(checkbox);
 
   expect(button).not.toBeEnabled();
-
-  fireEvent.click(checkbox);
-
-  expect(button).toBeEnabled();
 });

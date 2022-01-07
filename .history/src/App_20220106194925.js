@@ -17,7 +17,7 @@ function App() {
         Change to {newButtonColor}
       </button>
 
-      <input type='checkbox' onClick={() => setIsDisabled(!isDisabled)} />
+      <input type='checkbox' />
     </div>
   );
 }
