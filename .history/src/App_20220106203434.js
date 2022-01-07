@@ -11,7 +11,7 @@ function App() {
     <div>
       <button
         onClick={() => setButtonColor(newButtonColor)}
-        style={{ backgroundColor: isDisabled ? "gray" : buttonColor }}
+        style={{ backgroundColor: isDisabled ? 'gray' :  }}
         disabled={isDisabled}
       >
         Change to {newButtonColor}

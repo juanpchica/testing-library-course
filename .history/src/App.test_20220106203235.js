@@ -59,18 +59,3 @@ test("button gray when disabled", () => {
 
   expect(button).toHaveStyle({ backgroundColor: "red" });
 });
-
-test("button change color", () => {
-  render(<App />);
-
-  const button = screen.getByRole("button", { name: /Change to Blue/i });
-  const checkbox = screen.getByRole("checkbox", { name: "Disabled Button" });
-
-  fireEvent.click(button);
-
-  fireEvent.click(checkbox);
-  expect(button).toHaveStyle({ backgroundColor: "gray" });
-
-  fireEvent.click(checkbox);
-  expect(button).toHaveStyle({ backgroundColor: "blue" });
-});
