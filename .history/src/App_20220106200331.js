@@ -24,7 +24,6 @@ function App() {
         aria-checked={isDisabled}
         id='disabled-check-button'
       />
-      <label htmlFor='disabled-check-button'>Disabled Button</label>
     </div>
   );
 }
