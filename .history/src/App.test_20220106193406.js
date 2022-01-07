@@ -27,5 +27,5 @@ test("button disable when is checked", () => {
 
   const checkbox = screen.getByRole("checkbox");
 
-  expect(checkbox).not.toBeChecked();
+  expect(checkbox).toBeChecked();
 });
